@@ -1,17 +1,39 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,700;1,400&family=Roboto+Serif:wdth,wght@50,100;100,100&display=swap");
 
-body {
-  margin: 0;
-  padding: 0;
+:root {
+  --pri-color: #D9C9BA;
+  --sec-color: #733A26;
+  --col-3: #BF8069;
+  --col-4: #94A69F;
+  --col-5: #73664F;
+}
+
+body{
+  background-color: var(--pri-color);
+
 }
 
 ul {
   list-style: none;
   display: flex;
+  place-content: space-evenly;
+  li {
+    align-items: center;
+  }
 }
 a {
   text-decoration: none;
 }
 .navbar {
-  color: seagreen;
+  margin: 0;
+  text-align: center;
+  padding: 0;
+  height: 48px;
+  color: var(--sec-color);
+}
+.hero{
+  padding: 5%;
+  text-align: center;
+  height: 360px;
+  background-color: whitesmoke;
 }
