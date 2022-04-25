@@ -1,41 +1,70 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,700;1,400&family=Roboto+Serif:wdth,wght@50,100;100,100&display=swap");
 
 :root {
-  --pri-color: #D9C9BA;
-  --sec-color: #733A26;
-  --col-3: #BF8069;
-  --col-4: #94A69F;
-  --col-5: #73664F;
+  --pri-color: #d9c9ba;
+  --sec-color: #733a26;
+  --col-3: #bf8069;
+  --col-4: #94a69f;
+  --col-5: #73664f;
 }
 
-body{
+:root{
+  --pri-font: "Libre Baskerville", serif;
+  --sec-font: "Roboto Serif", serif;
+}
+
+
+body {
   background-color: var(--pri-color);
-
-}
-
-ul {
-  list-style: none;
-  display: flex;
   margin: 0;
   padding: 0;
-  place-content: space-evenly;
-  li {
-    align-items: center;
-  }
-}
-a {
-  text-decoration: none;
 }
 .navbar {
-  margin: 0;
-  text-align: center;
+  margin-top: 2%;
   padding: 0;
   height: 24px;
   color: var(--sec-color);
+  ul {
+    list-style: none;
+    font-family: var(--pri-font);
+    display: flex;
+    margin: 0;
+    padding: 0;
+    place-content: center;
+    li {
+      align-items: center;
+      margin: auto;
+      a {
+        text-decoration: none;
+        &:hover {
+          color: white;
+          font-size: large;
+          padding: 5px;
+          background-color: white;
+          background-color: var(--sec-color);
+          border-radius: 5px;
+        }
+      }
+    }
+  }
 }
-.hero{
-  padding: 5%;
+.hero {
+  margin-top: 2%;
+  padding: 0;
+  width: 100%;
+  background-color: var(--col-3);
   text-align: center;
-  height: 240px;
-  background-color: whitesmoke;
+  height: auto;
+  .hero-text {
+    font-family: var(--sec-font);
+    color: white;
+    line-height: 2.0;
+    font-size: 1.2em;
+    height: 100%;
+    margin-bottom: 2%;
+    span{
+      font-family: var(--pri-font);
+      font-size: 2.0em;
+    }
+  }
 }
