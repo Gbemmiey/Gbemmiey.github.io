@@ -33,14 +33,14 @@ a {
   margin: 0;
   text-align: center;
   padding: 0;
-  height: 48px;
+  height: 24px;
   color: var(--sec-color);
 }
 
 .hero {
   padding: 5%;
   text-align: center;
-  height: 360px;
+  height: 240px;
   background-color: whitesmoke;
 }
 /*# sourceMappingURL=index.css.map */
