@@ -1,10 +1,9 @@
-var contact = document.getElementById("contactPage");
-var about = document.getElementById("aboutPage");
-var heroText = document.getElementsByClassName("hero-text");
+let contact = document.getElementById("contactPage");
+let about = document.getElementById("aboutPage");
+let author = document.getElementById('name');
 
+contact.addEventListener("click", function () {
+  console.log("clicked");
+  author.textContent = 'Adeyemo'
+});
 
-let toggle = function () {
-  contact.addEventListener(onclick);
-  about.addEventListener(onclick);
-  
-};
