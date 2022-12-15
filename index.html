@@ -1,26 +1,111 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <link rel="stylesheet" href="index.css" />
-    <title>Gbemmiey's Portfolio Website</title>
-  </head>
-  <body>
-    <div class="navbar">
-      <ul>
-         <li><a href="#" id="aboutPage">About</li> </a>
-        <li><a href="#" id="contactPage">Contact</li> </a>
-      </ul>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Oluwagbemileke Femi Oyeyoade">
+  <meta name="keywords" content="Python, SQL, Portfolio, Java">
+  <meta name="description" content="A portfolio website created by 
+    Oluwagbemileke Femi Oyeyoade containing name, pictures, 
+    experience, education and projects">
+
+  <link rel="shortcut icon" href="images/favicon.ico" />
+  <title>My Personal CV Webpage</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+  <section id="intro_section">
+    <div class="intro-text">
+      <h1 id="name">Oluwagbemileke Femi Oyeyoade</h1>
+      <a href="mailto:gbemfemalabi@gmail.com" id="email">gbemfemalabi@gmail.com</a>
     </div>
-    <section class="hero">
-      <img src="https://img.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.jpg?w=740&t=st=1650888999~exp=1650889599~hmac=cf019263d7f8c72913e0914850610489bc138b44024fdf30849117aca63d6a45" alt="Computer">
-      <p class="hero-text" id="banner_text">
-        Hi, my name is  <br> <span id="name">OLUWAGBEMILEKE FEMI OYEYOADE </span>.
-        <br>
-        I'm a full stack developer specializing in HTML, CSS & Django.
-      </p>  
+    <img width="200" height="200" src="images/Pic.jpg" alt="Gbemmiey's picture" id="personal_image" />
+  </section>
+  <section id="education_section">
+    <h2 id="education_heading">Education</h2>
 
-    </section>
+    <table>
+      <caption>Educational Background</caption>
+      <thead class="table_heading">
+        <tr>
+          <th>Institute</th>
+          <th>Time</th>
+          <th>Results</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="table_data">Federal University of Technology Akure</td>
+          <td class="table_data">2015 - 2021</td>
+          <td class="table_data">B.Eng in Computer Engineering</td>
+        </tr>
+        <tr>
+          <td class="table_data">Udacity &trade;</td>
+          <td class="table_data">2022</td>
+          <td class="table_data">ALX-T Full Stack Web Developer</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
 
-    <script src="index.js"></script>
-  </body>
+  <section id="experience_section">
+    <h2 id="experience_heading">Experience</h2>
+    <table>
+      <caption>Experience</caption>
+      <thead class="experience_table_heading">
+        <tr>
+          <th>Company</th>
+          <th>Time</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="experience_table_data">JFET Engineering Solutions.</td>
+          <td class="experience_table_data">2019 - 2020</td>
+          <td class="experience_table_data">Designed embedded systems</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <section id="projects_section">
+    <h2 id="projects_title">Projects</h2>
+    <ol id="projects_list">
+      <li>Students' Identification System</li>
+      <li>School Package</li>
+    </ol>
+  </section>
+
+
+  <footer id="footer">
+    <a id="contact_link" href="contact.html">Contact Me</a>
+    <div id="sm_links">
+      <div id="sm_facebook">
+        <a href="/facebook">
+          <img width="24" height="24" src="images/facebook.png" alt="Facebook">
+        </a>
+      </div>
+
+      <div id="sm_twitter">
+        <a href="/twitter">
+          <img width="24" height="24" src="images/twitter.png" alt="Twitter">
+        </a>
+
+      </div>
+
+      <div id="sm_linkedin">
+        <a href="/linkedin">
+          <img width="24" height="24" src="images/linkedin.png" alt="LinkedIn">
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+</body>
+
 </html>
