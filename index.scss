@@ -1,11 +1,15 @@
-// New CSS
 *{
   box-sizing: border-box;
+}
+
+body{
+  background-color: white;
 }
 
 #intro_section{
   display: flex;
   flex-direction: row;
+  border-radius: 4px;
   padding: 0 2.5%;
   background-color: aliceblue;
   align-items: center;
@@ -36,9 +40,22 @@ h1{
 }
 
 #education_section{
+  width: 100%;
   display: block;
   width: auto;
 }
+table{
+  width: 100%;
+}
+thead{
+  color: white;
+  background-color: blue;
+}
+tbody{
+  background-color: azure;
+  text-align: center;
+}
+
 h2{
   color: #161B40;
 }
@@ -47,7 +64,7 @@ footer{
   display: flex;
   height: 40px;
   padding:  5px;
-  background-color: turquoise;
+  background-color: aliceblue;
 }
 
 footer>a{
