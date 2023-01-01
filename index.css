@@ -1,11 +1,11 @@
-body {
-  width: 100%;
+* {
+  box-sizing: border-box;
 }
 
 #intro_section {
   display: flex;
   flex-direction: row;
-  padding: 2.5%;
+  padding: 0 2.5%;
   background-color: aliceblue;
   align-items: center;
   width: auto;
@@ -13,8 +13,19 @@ body {
   height: 200px;
 }
 
-#intro-text {
+.intro-text {
   height: auto;
+}
+
+#personal_image {
+  border-radius: 50%;
+  border: 16px solid white;
+  align-self: flex-end;
+  z-index: 999;
+  width: 100%;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
 }
 
 h1 {
@@ -25,16 +36,6 @@ h1 {
 
 #email {
   color: #161B40;
-}
-
-#personal_image {
-  border-radius: 50%;
-  border: 2px dotted burlywood;
-  align-self: flex-end;
-  width: 100%;
-  max-width: -webkit-max-content;
-  max-width: -moz-max-content;
-  max-width: max-content;
 }
 
 #education_section {
