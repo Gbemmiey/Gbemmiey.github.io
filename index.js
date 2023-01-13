@@ -4,6 +4,6 @@ let author = document.getElementById('name');
 
 contact.addEventListener("click", function () {
   console.log("clicked");
-  author.textContent = 'Adeyemo'
+  author.textContent = 'Gbemmiey'
 });
 
