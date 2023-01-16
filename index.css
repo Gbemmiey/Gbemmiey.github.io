@@ -3,29 +3,36 @@
 }
 
 body {
-  background-color: white;
-  margin: 0 2.5%;
+  background-color: aliceblue;
 }
 
 #intro_section {
   display: flex;
   flex-direction: row;
+  border: 2px white solid;
   border-radius: 4px;
   background-color: aliceblue;
   align-items: center;
   width: 100%;
   justify-content: space-between;
-  height: auto;
+  height: 150px;
 }
 
-.intro-text {
-  margin-left: 5%;
+.intro-section > .intro-text {
   height: auto;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
-.intro-text a {
+.intro-section > .intro-text a {
   align-self: flex-end;
+}
+.intro-section > .intro-text h3 {
+  font-family: cursive;
+  color: #161B40;
+  font-size: 1.5em;
 }
 
 #personal_image {
@@ -33,16 +40,17 @@ body {
   border: 16px solid white;
   align-self: flex-end;
   z-index: 999;
-  width: 50%;
+  height: 100%;
   max-width: -webkit-max-content;
   max-width: -moz-max-content;
   max-width: max-content;
+  max-height: -webkit-max-content;
+  max-height: -moz-max-content;
+  max-height: max-content;
 }
 
-h1 {
-  font-family: cursive;
-  color: #161B40;
-  font-size: 2.5em;
+body {
+  margin: 0 2.5%;
 }
 
 #email {
