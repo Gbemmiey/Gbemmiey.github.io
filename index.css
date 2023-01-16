@@ -21,6 +21,11 @@ body {
 .intro-text {
   margin-left: 5%;
   height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.intro-text a {
+  align-self: flex-end;
 }
 
 #personal_image {
@@ -47,6 +52,8 @@ h1 {
 .project {
   height: 400px;
   text-align: center;
+  display: flex;
+  justify-content: space-between;
 }
 .project a {
   list-style: none;
@@ -54,10 +61,13 @@ h1 {
   margin: auto;
   font-style: italic;
 }
-.project img, .project iframe {
+.project img {
   width: 100%;
   height: 300px;
   border: 2px dotted green;
+}
+.project .project-details {
+  width: 100%;
 }
 
 #education_section {
